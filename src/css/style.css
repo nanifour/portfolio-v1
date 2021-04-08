@@ -1,0 +1,355 @@
+/* css reset to get rid of white space */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    background-color: white;
+}
+
+/* first block */
+.hero{
+    background-color: #04091d;
+    height: 110vh;
+    color: white;
+    font-size: 24px;
+}
+
+/* nav-menu bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    background-color: #04091d;
+    color: white;
+}
+
+.logo-img{
+    height: 50px;
+    margin: 13px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    color: #7efefe;
+}
+
+.nav-num{
+    color: #7efefe;
+
+    font-size: 15px;
+}
+
+/* hero section customization */
+h1{
+    font-size: 75px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.name-color{
+    color: #7efefe;
+}
+
+h2{
+    font-size: 50px;
+}
+
+p{
+    margin: 0;
+    font-weight: 400;
+}
+
+.subtext{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-evenly;
+}
+
+ul.show{
+    display: block;
+}
+
+li{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.hero-area{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text{
+    margin-left: 80px;
+    margin-bottom: 100px;
+}
+
+.hero-def{
+    color: rgb(202, 202, 202);
+}
+
+/* resume button  */
+.res-button-div{
+    width: 150px;
+    height: 30px;
+    border: solid #7efefe;
+    border-radius: 7px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.hero-buttn {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.res-button-div:hover{
+    background-color: #7efefe; 
+}
+.res-button-div:active{
+    background-color: grey;
+}
+
+/*subsection*/
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+/*section 2*/
+.headshot{
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+/*section 3*/
+.sub-section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+.skill-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.skill-card{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 20px rgb(175, 175, 175);
+    margin: 10px;
+}
+
+.skill-imgs{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+#py-card{
+    background-color: #22577a;
+}
+
+#cpp-card{
+    background-color: #c7f9cc;
+}
+
+#htmlcss-card{
+    background-color: #29b5cb;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.project-card{
+    width: 250px;
+    height: 425px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(189, 189, 189);
+    margin: 10px;
+}
+
+.project-card:hover{
+    box-shadow: 5px 5px 20px rgb(165, 165, 165);
+}
+
+/*responsive design for project and skill seciton*/ 
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skill-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-images{
+    width: 230px;
+    border-radius: 125px;
+    margin-top: 10px;
+}
+
+hr{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.subtext2{
+    color: #7417FF;
+}
+
+.link-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* footer */
+footer{
+    background-color: #04091d;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+.footer-text{
+    font-size: 25px;
+    font-weight: 100px;
+}
+
+.socials{
+    /* padding-bottom: 100px;*/
+    display: flex;
+    justify-content: center; 
+    margin: 10px;
+ }
+ 
+ .social{
+    margin: 5px;
+ }
+
+ .fa-github{
+    color: #7efefe;
+ }
+
+ .fa-github:hover{
+     color: rgb(173, 173, 173);
+ }
+
+ .fa-spotify{
+    color: #7efefe;
+ }
+
+ .fa-spotify:hover{
+     color: #1cc267;
+ }
+
+.fa-linkedin-in{
+    color: #7efefe;
+ }
+
+ .fa-linkedin-in:hover{
+     color: #00bbf9;
+ }
+
+/* Footer banner colors*/
+.br-b{
+     background-color: #000071;
+     height: 1vh;
+ }
+.br-y{
+    background-color: #fdfc38;
+    height: 1vh;
+}
+.br-g{
+    background-color: #7efefe;
+    height: 1vh;
+}
+
+  /*hamburger menu for responsive screen*/ 
+@media only screen and (max-width: 1000px){
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: #7efefe;;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul{
+        display: none;
+        background-color: #070f30;
+        margin: 0px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #070f30;
+    }
+
+    ul.show{
+        display: block;
+    }
+
+    .hero-text{
+        margin-left: 80px;
+        margin-bottom: 170px;
+    }
+
+    .logo-img{
+        display: none;
+    }
+
+}
